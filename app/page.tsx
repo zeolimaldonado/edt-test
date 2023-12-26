@@ -3,7 +3,7 @@ import { RestaurantList } from './restaurantList'
 
 export default function Home() {
   return (
-    <main>
+    <main className='w-full h-screen container p-2'>
       <RestaurantList />
     </main>
   )

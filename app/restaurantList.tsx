@@ -1,3 +1,5 @@
+import { Dropdown } from './components/Dropdown'
+import { RestaurantCard } from './components/RestaurantCard'
 import { Restaurant } from './types/restaurant'
 
 const requestRestaurants = async () => {
@@ -8,14 +10,18 @@ const requestRestaurants = async () => {
 export async function RestaurantList () {
     const restaurants : Restaurant[] = await requestRestaurants()
     return (
-        <ul>
-            {
-                restaurants.map(item => (
-                    <li key={item.id}>
-                        {item.name}
-                    </li>
-                ))
-            }
-        </ul>
+        <section className='w-full h-full overflow-hidden flex flex-col'>
+            <header className='flex flex-row items-center gap-1 py-2'>
+                <input type="text" className='flex-grow rounded border border-gray-200 h-8' />
+                <Dropdown />
+            </header>
+            <section className='w-full grid grid-cols-1 gap-2 flex-1 overflow-y-auto py-2'>
+                {
+                    restaurants.map(item => (
+                        <RestaurantCard restaurant={item} key={item.id} />
+                    ))
+                }
+            </section>
+        </section>
     )
 }

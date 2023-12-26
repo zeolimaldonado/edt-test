@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className='py-4 px-3'>
+          <h2>MELP</h2>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
