@@ -16,8 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className='py-4 px-3'>
+      <body className={`${inter.className} h-screen flex flex-col`}>
+        <header className='py-4 px-3 max-h-14'>
           <h2>MELP</h2>
         </header>
         {children}
