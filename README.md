@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Summary:
 
-## Getting Started
+We expect a simple application that lets the data shine and show your coding abilities. We think that this project can be completed within 5 hours, but you can take up to 48 hours if you need to.
 
-First, run the development server:
+We will evaluate the following:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Data shown in a clear, organized and beautiful web interface
+- Capability of the app to order items by rating or alphabetically
+- Link to the repository (Github) and app deployed into Github Pages
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Melp is a business focussed on showing information about the best restaurants in the city. They have a pretty successful mobile application and are planning to expand their market through a web platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You are the ninja frontend developer of the company and you are asked to make a proposal for the web application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can get the information from https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json with a GET request.
 
-## Learn More
+Once you’ve finished, upload your project to https://pages.github.com and send us the link to review it.
 
-To learn more about Next.js, take a look at the following resources:
+## Bonus 1:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Share and like buttons to facebook with the details of certain restaurants.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Bonus 2:
 
-## Deploy on Vercel
+This task consists on implementing a feature in which given a certain point in a map (You could drop a pin in a map) and a radius in meters:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Count of all the restaurants within the radius provided.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Show the average rating of restaurants inside the circle.
+
+Standard deviation of rating of restaurants inside the circle
+
+## Bonus 3:
+
+Show recommendations about the nearest restaurants in the zone given a point in a map, a radius in meters and a range of rating.
+
+Bonus Points:
+
+- Git history
+
+- Visual appeal of the application
+
+- Responsiveness
+
+- Social buttons to facebook
+
+- Statistical data about restaurants in the area
+
+- Recommendations given a coordinate
+
+- Use of external libraries that provide a value to your development
+
+- Good programming practices
