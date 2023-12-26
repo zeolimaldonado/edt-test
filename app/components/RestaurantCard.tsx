@@ -1,3 +1,4 @@
+import { FacebookIcon, FacebookShareButton } from 'next-share';
 import { Restaurant } from '../types/restaurant';
 import { EmailIcon } from './EmailIcon';
 import { PhoneIcon } from './PhoneIcon';
@@ -27,9 +28,17 @@ export function RestaurantCard ({ restaurant } : { restaurant: Restaurant }) {
                 <span>{restaurant.address.street}</span>
                 <span>{restaurant.address.city}, {restaurant.address.state}</span>
             </section>
-            <section>
+            <section className='flex justify-between items-center'>
                 <article className='w-1/3'>
                     <Rating rating={restaurant.rating} />
+                </article>
+                <article>
+                    <FacebookShareButton
+                        url={restaurant.contact.site}
+                        quote={`Visita ${restaurant.name}, un buen restaurante para comer, visitanos en ${restaurant.address.street}, ${restaurant.address.city}, ${restaurant.address.state}`}
+                    >
+                        <FacebookIcon size={20} className='rounded-full' />
+                    </FacebookShareButton>
                 </article>
             </section>
         </div>
